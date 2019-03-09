@@ -1,0 +1,29 @@
+header {
+	margin-bottom: 2rem;
+}
+img {
+	width: 6rem;
+}
+
+
+.navbar-brand {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-size: 30px;
+	font-weight: 600;
+	padding: 0 3rem;
+	margin-right: 1rem;
+}
+
+nav {
+	border-bottom: solid 1px #ddd;
+	padding-bottom: 4px;
+}
+.nav-brand {
+	width: 200px;
+}
+
+main {
+	min-height: calc(100vh - 19rem);
+	height: 100%;
+	padding: 1rem;
+}

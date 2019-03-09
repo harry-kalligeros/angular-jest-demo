@@ -59,17 +59,20 @@
     "quotemark": [
       true,
       "single"
-    ],
+	],
+	"indent": [true, "tabs", 4],
     "trailing-comma": false,
     "no-output-on-prefix": true,
     "use-input-property-decorator": true,
     "use-output-property-decorator": true,
-    "use-host-property-decorator": true,
+	"use-host-property-decorator": true,
+	"variable-name": [true, "ban-keywords", "check-format", "allow-leading-underscore"],
     "no-input-rename": true,
     "no-output-rename": true,
     "use-life-cycle-interface": true,
     "use-pipe-transform-interface": true,
     "component-class-suffix": true,
-    "directive-class-suffix": true
+	"directive-class-suffix": true,
+	"one-variable-per-declaration": false
   }
 }

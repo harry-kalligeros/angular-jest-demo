@@ -1,0 +1,7 @@
+<h1 class="is-title is-size-2">Products</h1>
+<app-products-filter (filterChange)="updateProducts($event)"></app-products-filter>
+<app-products-list
+	[products]="products"
+	[quantities]="quantities"
+	(addToCart)="addToCart($event)"
+></app-products-list>

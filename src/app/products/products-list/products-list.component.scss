@@ -1,0 +1,23 @@
+:host {
+	width: 100%;
+}
+
+.table {
+	width: 60%;
+}
+
+.product {
+	width: 40%;
+}
+
+.quantity {
+	width: 6rem;
+}
+
+.amount {
+	text-align: right;
+}
+
+.add-to-cart {
+	width: calc(60% - 8rem);
+}

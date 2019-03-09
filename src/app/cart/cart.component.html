@@ -1,0 +1,34 @@
+<h1 class="is-title is-size-2">Cart</h1>
+<table class="table">
+	<thead>
+		<tr>
+			<th class="product">Product</th>
+			<th class="net-price amount">Net Price</th>
+			<th class="vat amount">VAT</th>
+			<th class="quantity amount">Quantity</th>
+			<th class="price amount">Price</th>
+			<th>&nbsp;</th>
+		</tr>
+	</thead>
+	<tr *ngFor="let product of cartProducts">
+		<td class="product">
+			{{product.name}}
+		</td>
+		<td class="net-price amount">
+			{{product.price}}
+		</td>
+		<td class="vat amount">
+			{{product.vat}}
+		</td>
+		<td class="quantity amount">
+			{{product.quantity}}
+		</td>
+		<td class="price amount">
+			{{ calculatePrice(product) | myDecimal }}
+		</td>
+		<td>
+			<button class="button is-danger" (click)="removeFromCart(product?.id)">Remove from cart</button>
+		</td>
+	</tr>
+</table>
+<app-total *ngIf="cartProducts" [cartProducts]=cartProducts></app-total>

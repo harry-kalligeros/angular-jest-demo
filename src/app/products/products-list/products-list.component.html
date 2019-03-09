@@ -1,0 +1,35 @@
+<table class="table">
+	<thead>
+		<tr>
+			<th class="product">Product</th>
+			<th class="price amount">Price</th>
+			<th class="vat amount">VAT</th>
+			<th class="quantity amount">Quantity</th>
+			<th>&nbsp;</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr *ngFor="let product of products">
+			<td class="product">
+				{{product.name}}
+			</td>
+			<td class="price amount">
+				{{product.price}}
+			</td>
+			<td class="vat amount">
+				{{product.vat}}
+			</td>
+			<td class="quantity amount">
+				<div class="field">
+					<div class="control">
+						<input class="input" type="number" name="quantity" min="0" [(ngModel)]="quantities[product.id]">
+					</div>
+				</div>
+			</td>
+			<td class="add-to-cart">
+				<button class="button is-primary" [disabled]="!quantities[product.id]"
+					(click)="addProductToCart(product, quantities[product.id])">Add to cart</button>
+			</td>
+		</tr>
+	</tbody>
+</table>

@@ -1,5 +1,5 @@
 {
-  "name": "jest-demo",
+  "name": "angular-jest-demo",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
